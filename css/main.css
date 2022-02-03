@@ -1,0 +1,161 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Lato', sans-serif;
+  background-color: #f3f3f3;
+}
+
+.main {
+  border-radius: 25px;
+  margin-top: 5%;
+  top: 5%;
+  width: 80%;
+  background-color: white;
+}
+
+.main .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 5px solid #6b6a6a;
+}
+
+.main .menu .fas {
+  color: #6b6a6a;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.main .menu button {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.main .notes {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .notes .priv {
+  background-color: #d7f8d7;
+}
+
+.main .notes .work {
+  background-color: #d7d7f7;
+}
+
+.main .notes .others {
+  background-color: #f5f5df;
+}
+
+.main .notes .noteSquare {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px 0;
+  margin: 20px 30px;
+}
+
+.main .notes .noteSquare .fa-trash-alt {
+  margin: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 75%;
+  bottom: 5%;
+}
+
+.main .notes .noteSquare .noteTitle {
+  text-align: center;
+  font-weight: bold;
+  padding: 3px;
+  border-bottom: 1px solid #000;
+}
+
+.main .notes .noteSquare .noteText {
+  padding: 10px;
+}
+
+.main .popUp {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 300px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.main .popUp .popUpTitle,
+.main .popUp .popUpCat {
+  padding: 5px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 2px #6b6a6a;
+          box-shadow: 0 0 2px #6b6a6a;
+}
+
+.main .popUp p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.main .popUp input {
+  width: 80%;
+}
+
+.main .hide {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

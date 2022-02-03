@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-family: 'Lato', sans-serif;
+	background-color: rgb(243, 243, 243);
+}
+.main {
+	border-radius: 25px;
+	margin-top: 5%;
+	top: 5%;
+	width: 80%;
+	background-color: white;
+	.menu {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.fas {
+			color: rgb(107, 106, 106);
+			font-size: 50px;
+			padding: 20px;
+		}
+		button {
+			font-size: 20px;
+			margin: 10px;
+		}
+		border-bottom: 5px solid rgb(107, 106, 106);
+	}
+
+	.notes {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.priv {
+			background-color: rgb(215, 248, 215);
+		}
+		.work {
+			background-color: rgb(215, 215, 247);
+		}
+		.others {
+			background-color: rgb(245, 245, 223);
+		}
+		.noteSquare {
+            position: relative;
+			width: 200px;
+			height: 200px;
+			border-radius: 10px 0;
+			margin: 20px 30px;
+            .fa-trash-alt  {
+                margin: 15px;
+                position: absolute;
+                display: flex;
+                left: 75%;
+                bottom: 5%;
+            }
+			.noteTitle {
+				text-align: center;
+				font-weight: bold;
+				padding: 3px;
+				border-bottom: 1px solid #000;
+			}
+			.noteText {
+				padding: 10px;
+			}
+		}
+	}
+	.popUp {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		width: 300px;
+		height: 400px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 15px;
+		.popUpTitle,
+		.popUpCat {
+			padding: 5px;
+			margin: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			box-shadow: 0 0 2px rgb(107, 106, 106);
+		}
+		p {
+			text-align: center;
+			margin-bottom: 5px;
+		}
+		input {
+			width: 80%;
+		}
+	}
+	.hide {
+		display: none;
+	}
+}

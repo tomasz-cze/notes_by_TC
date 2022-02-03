@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notataki by TC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <i class="fas fa-clipboard"></i>
+            <div class="menuBtns">
+                <button class="add">Dodaj</button>
+                <button class="clearAll">Wyczyść</button>
+            </div>
+        </div>
+        <div class="notes">
+            <div class="noteSquare work">
+                <div class="noteTitle">wysłać maila</i></div>
+                <div class="noteText">Lorem ipsum dolor sit amet.</div>
+                <i class="fas fa-trash-alt"></i>
+            </div>
+            <div class="noteSquare others">
+                <div class="noteTitle">Samochód</div>
+                <div class="noteText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut officia a mollitia
+                    totam molestias cupiditate.</div>
+                <i class="fas fa-trash-alt"></i>
+            </div>
+            <div class="noteSquare priv ">
+                <div class="noteTitle">Zakupy</div>
+                <div class="noteText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quae numquam,
+                    ducimus corporis est architecto!</div>
+                <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+        <div class="popUp hide ">
+            <div class="popUpTitle">
+                <p>Wprowadź tytuł notatki</p>
+                <input type="text" class="title" placeholder="wpisz tytuł">
+            </div>
+            <div class="popUpText">
+                <p>Wprowadź treść notatki</p>
+                <textarea class='popUpText' class='text' rows="8" cols="20"></textarea>
+            </div>
+            <div class="popUpCat">
+                <p>Wybierz kategorię</p>
+                <select class="catOptions">
+                    <option>Inne</option>
+                    <option>Praca</option>
+                    <option>Prywatne</option>
+                </select>
+            </div>
+            <button class="popUpBtnConfirm">Zatwierdź</button>
+            <button class="popUpBtnCancel">Anuluj</button>
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/5ad2517ddc.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
